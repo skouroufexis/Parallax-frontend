@@ -15,6 +15,12 @@
     <!-- ICONS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+
+
+    
+
+
 </head>
 
 <body>
@@ -323,10 +329,88 @@
                 <div class="col-12 col-lg top1">
 
                     <img class="img-fluid small-icon" src="./images/logo.png" alt="icon">
-
+                    
                 </div>
 
             </div>
+
+        </div>
+
+        <div class="container top1">
+            
+            <div class="row">
+                <div class="col-12 col-lg-6"  style="background-color:rgb(236, 243, 240); padding: 2%;">
+                     <h1><b>CONTACT US</b></h1>
+                     <p>Nam vestibulum, neque sit amet porta </p>                 
+                     <p><i class="lightblack fa fa-map-marker"> Nam vestibulum Str</i></p>
+                     <p><i class="lightblack fa fa-phone"> +35799764345</i></p>
+                     <p><i class="lightblack fa fa-fax"> +35799764344</i></p>
+                     <p><i class="lightblack fa fa-envelope"> info@company.com</i></p>                                  
+                </div>
+    
+                <form class="col-12 col-lg-6" style="padding: 2%;" id="contact-form">
+                    <div class="container">
+                        <h1 class="row"><b>GET IN TOUCH</b></h1>
+                        <span class="row">
+                            <label class="col left">Your name </label>
+                            <label class="col right"><i class="vertical-centre fa fa-user"></i></label>
+
+                        </span>
+                        <input type="text" name="username">
+
+                        
+                        <span class="row top2">
+                            <label class="col left">Email</label>
+                            <label class="col right"><i class="fa fa-envelope"></i></label>
+                        </span>
+                        <input type="text" name="email">
+
+
+                        <span class="row top2">
+                            <label class="col left">Message</label>
+                            <label class="col right"><i class="fa fa-comment"></i></label>
+                        </span>
+                        <textarea class="top1" name="message" rows="5"></textarea>
+
+                        <span class="row top2">                            
+                            <input class="top1" type="submit" value="SEND A MESSAGE" id="input-submit">
+                        </span>
+                        
+
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="row top2">
+                <iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=strovolos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+             </div>
+
+             
+            <div class="row top2">
+                <div class="col-12 col-lg-6 centre">
+                    <img class="img-fluid" src="./images/logo.png" alt="logo" id="small-logo">
+                </div>
+                <div class="col-12 col-lg left">
+                    <span class="row">
+                        <h3 class="col"><b>RECEIVE OUR NEWSLETTER</b></h3>
+                    </span>
+                    <span class="row">
+                        <small class="col">Nam vestibulum, neque sit amet porta</small><br>
+                    </span>
+                    
+                    <span class="row">
+                        <input class="col" type="text" placeholder="email" id="inputMailingList" style="margin-left:auto;">
+                        <button class="col">SUBSCRIBE</button>
+                    </span>
+                    
+                </div>
+
+            </div>
+                            
+        
+                                
+            
 
         </div>
 
@@ -334,11 +418,36 @@
 
     </main>
 
+
+    <footer class="container">
+
+        <div class="row centre">
+
+            <small>© 2017, Company. All rights reserved. | Developed by developerName</small>
+
+        </div>
+
+
+    </footer>
+
     
 
     
 
 
  <script src="./index.js"></script>   
+
+ <script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("map"),mapProp);
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
 </body>
 </html>

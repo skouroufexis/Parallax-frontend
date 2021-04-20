@@ -98,6 +98,10 @@ h2{
 
 }
 
+h3{
+  font-size:small!important;
+}
+
 p{text-align: justify;}
 
 .icon {max-height: 80px;}
@@ -119,4 +123,36 @@ p{text-align: justify;}
 .small-icon {
   max-height: 80px;
   opacity: 0.4;
+}
+
+
+form input, form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: solid rgba(0,0,0,0.1) 2px;
+}
+
+
+#contact-form textarea {resize: none;}
+
+
+
+
+#input-submit,button {
+  background-color: white;
+  border: solid goldenrod 2px!important;
+}
+
+iframe {width: 100%; height: 200px;}
+
+#small-logo {max-height: 60px;}
+
+#inputMailingList {
+  border: none;
+}
+
+footer {
+  border-top: solid rgba(0,0,0,0.1) thin;
+  color: rgba(0,0,0,0.4);
+  padding: 2%;
 }
