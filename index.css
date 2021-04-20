@@ -49,6 +49,7 @@ a,a:visited,a:hover,a:active {color:black; text-decoration: none;}
 
 .black{color: rgba(0,0,0,0.7);}
 
+
 #menuContainer {border-bottom:solid goldenrod medium;}
 
 /* #search-container {
@@ -64,7 +65,7 @@ a,a:visited,a:hover,a:active {color:black; text-decoration: none;}
 }
 
 
-
+main .container {padding: 3%;}
 
 #img-main {max-height: 400px;}
 
@@ -79,6 +80,11 @@ a,a:visited,a:hover,a:active {color:black; text-decoration: none;}
   background-color: rgb(255, 255, 255,0.4);
 }
 
+
+#services-container {
+  background-color: rgb(236, 243, 240);
+}
+
 h1 {
   font-size:large!important;
   
@@ -91,3 +97,5 @@ h2{
 }
 
 p{text-align: justify;}
+
+.icon {max-height: 80px;}
