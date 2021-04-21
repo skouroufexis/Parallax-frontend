@@ -19,52 +19,71 @@
 
 
     
-
-
+    
 </head>
 
 <body>
 
 
-    <header class="container top1">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-2 centre" id="logoContainer">
-                    <img class="img-fluid" src="./images/logo.png" id="logo" alt="logo">
-                </div>
-                <div class="d-none d-lg-flex col" id="menuContainer" >
-                    <div class="container vertical-centre">
-                        <div class="row">                            
-                                <a class="col-5 m-left right" href="mailto:info@company.com"><small class="lightblack">info@company.com</small></a>
-
-                                <nav class="col-1 right">
-                                    <a class="active" href="index.html"><b>EN</b></a>                                    
-                                </nav>
-                            
-
-                            
-                                <nav class="col-1 left">
-                                    <a href="#"><b>GR</b></a>                                    
-                                </nav>
-                            
-
+    <section id="top">
+        <header class="container top1">
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-2 centre" id="logoContainer">
+                        <img class="img-fluid" src="./images/logo.png" id="logo" alt="logo">
+                    </div>
+                    <div class="d-none d-lg-flex col" id="menuContainer" >
+                        <div class="container vertical-centre">
+                            <div class="row">                            
+                                    <a class="col-5 m-left right" href="mailto:info@company.com"><small class="lightblack">info@company.com</small></a>
+    
+                                    <nav class="col-1 right">
+                                        <a class="active" href="index.html"><b>EN</b></a>                                    
+                                    </nav>
+                                
+    
+                                
+                                    <nav class="col-1 left">
+                                        <a href="#"><b>GR</b></a>                                    
+                                    </nav>
+                                
+    
+                            </div>
+    
+                            <nav class="row top1 sticky-top">
+                                <a href="#about" class="m-left col-2 right vertical-centre">ABOUT US</a>
+                                <a href="#products" class="col-2 right vertical-centre">PRODUCTS</a>
+                                <a href='#services' class="col-2 right vertical-centre">SERVICES</a>
+                                <a href='#contact' class="col-2 right vertical-centre">CONTACT US</a>
+                                <div class="col-1" id="search-container"><i class="fa fa-search"></i></div>                                
+                            </nav>
                         </div>
-
-                        <nav class="row top1">
-                            <a href="#about" class="m-left col-2 right vertical-centre">ABOUT US</a>
-                            <a href="#products" class="col-2 right vertical-centre">PRODUCTS</a>
-                            <a href='#services' class="col-2 right vertical-centre">SERVICES</a>
-                            <a href='#contact' class="col-2 right vertical-centre">CONTACT US</a>
-                            <div class="col-1" id="search-container"><i class="fa fa-search"></i></div>
-                            
-                        </nav>
                     </div>
                 </div>
             </div>
-        </div>
+    
+        </header>
+    </section>
 
-    </header>
+
+    <!-- MOBILE MENU -->
+
+    <div class="container d-lg-none sticky-top">
+        <div class="row">
+            <button class="col-12 left" id="mobileMenuButton" onclick="openMenu()"><i class="fa fa-bars"></i></button>
+        </div>
+        <div class="row" id="mobileMenuLinksContainer">
+            <button style="border:none" class="left" onclick="closeMenu()"><i class="fa fa-caret-left"></i></button>
+            <a href="#about" class="mobileMenu col-12 top2 vertical-centre" onclick="closeMenu()">ABOUT US</a>
+            <a href="#products" class="mobileMenu col-12 top2 vertical-centre" onclick="closeMenu()">PRODUCTS</a>
+            <a href='#services' class="mobileMenu col-12 top2  vertical-centre" onclick="closeMenu()">SERVICES</a>
+            <a href='#contact' class="mobileMenu col-12 top2 vertical-centre" onclick="closeMenu()">CONTACT US</a>
+            <div class="col-2 centre top2" id="search-container2"><i class="fa fa-search"></i></div> 
+        </div>
+    </div>
+
+
 
     <main class="container top2">
 
@@ -396,23 +415,31 @@
     
                  
                 <div class="row top2">
-                    <div class="col-12 col-lg-6 centre">
+
+                    <div class="col-12 col-lg-4 centre top2">
                         <img class="img-fluid" src="./images/logo.png" alt="logo" id="small-logo">
                     </div>
-                    <div class="col-12 col-lg left">
+
+                    <div class="col-8 col-lg-4 left top2">
                         <span class="row">
                             <h3 class="col"><b>RECEIVE OUR NEWSLETTER</b></h3>
                         </span>
                         <span class="row">
-                            <small class="col">Nam vestibulum, neque sit amet porta</small><br>
+                            <small class="col">Nam vestibulum, neque sit amet porta vestibulum </small><br>
                         </span>
                         
                         <span class="row">
                             <input class="col" type="text" placeholder="email" id="inputMailingList" style="margin-left:auto;">
-                            <button class="col">SUBSCRIBE</button>
+                            <button class="col left1">SUBSCRIBE</button>
+                            
                         </span>
-                        
                     </div>
+
+                    <div class="col vertical-centre  col-lg-4 right top2">
+                        <a href="#top" class="col  vertical-centre"><i class="fa fa-chevron-circle-up" id="up"></i></a>
+                    </div>
+
+                    
     
                 </div>
                                 
